@@ -2,6 +2,20 @@
 
 #Exercício 8: Ler um número real e dividi-lo em parte inteira e parte fracionária.
 
+num = float(input("Insira um número real: "))
+#O valor que o usuário fornece e que será retornada pelo input() é sempre um string e não um número. Antes de fazer a conta, precisamos converter para float.
+
+parte_int = int(num)
+
+# Para usar só dois dígitos decimais, usar round(número,num de decimais)
+parte_fr = round(float(num) - parte_int,2)
+
+
+print("A parte inteira é", parte_int," e a parte fracionária é ", parte_fr)
+
+
+
+
 #Exercício 11:Em um frigorífico existem 50 bois. Cada boi traz preso no pescoço um cartão contendo seu número de identificação e o peso. Elaborar um algoritmo para ler os dados de todos os bois e escrever somente o número e o peso do boi mais gordo. Admitir que todos os bois têm pesos diferentes.
 
 
