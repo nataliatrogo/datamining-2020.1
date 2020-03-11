@@ -1,0 +1,26 @@
+#Aula 14/02/20: "Hello, World"
+
+print ("1,2,3,4")
+print ("Hello, world")
+print (1, 2, 3)
+print ('Hello, ' 'World')
+print (1+2)
+print (1.222+3.999)
+print (2/5)
+print (1.58465/164)
+print (1265*2)
+print (2^5654,'\n')
+ 
+ 
+nome = input('Insira seu nome:  ')
+idade = input('Insira sua idade:  ')
+print('\n')
+print ('Seu nome é ',nome,'e você tem ',idade," anos de idade"'\n')
+print (f'Seu nome é {nome} e você tem {idade} anos de idade\n')
+ 
+import datetime
+tday = datetime.date.today()
+print ('Hoje é dia ',tday,'\n')
+ANO_ATUAL = tday.year
+ano_nascimento = int(ANO_ATUAL)-int(idade)-1
+print ('Você nasceu em ',ano_nascimento)
