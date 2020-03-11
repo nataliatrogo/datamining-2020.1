@@ -1,0 +1,51 @@
+# EXERCÍCIO 3 DA LISTA
+
+def ordena_tres_numeros(valor1, valor2, valor3):
+    if valor1 > valor2:
+        valor1, valor2 = valor2, valor1
+        if valor2 > valor3:
+            valor2, valor3 = valor3, valor2
+        if valor1 > valor2:
+            valor1, valor2 = valor2, valor1
+
+            print(valor1, valor2, valor3)
+
+def ordena_tres_numeros_alt(valores):
+    ret = valores
+    for valor in valores:
+        print(valor)
+        print(ret)
+
+
+# EXERCÍCIO 4 DA LISTA
+
+def decompoe_numero(valor):
+    print(valor % 10)
+    print((valor // 10) % 10)
+
+#EXERCÍCIO 6
+def informa_pares():
+    for i in range(3):
+        valor = int(input('insira um número.\n'))
+        #e multiplo(valor, 2)
+
+#EXERCÍCIO 10
+def informa_maior():
+    maximo = 0
+    for i in range(3):
+        valor = int(input('insira um número.\n'))
+        if valor > maximo:
+            maximo = valor
+    print('O maior valor inserido é', maximo)
+
+def informa_maior_alt():
+    numeros = []
+    for i in range(3):
+        numeros.append(int(input('Informe um valor.\n')))
+    print(numeros)
+
+def main():
+    informa_maior()
+
+if __name__ == '__main__':
+        main()
